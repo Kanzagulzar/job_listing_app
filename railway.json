@@ -1,0 +1,19 @@
+{
+  "build": {
+    "commands": [
+      "pip install -r backend/requirements.txt"
+    ]
+  },
+  "start": {
+    "cmd": "python backend/app.py"
+  }
+}
+
+{
+  "build": {
+    "builder": "NIXPACKS",
+    "buildCommand": "pip install -r requirements.txt",
+    "startCommand": "python backend/app.py",
+    "rootDir": "backend"
+  }
+}
